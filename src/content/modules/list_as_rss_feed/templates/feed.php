@@ -37,7 +37,7 @@ if (get_type () == "list" and $id !== null) {
 			$url .= $servername;
 			$meta = get_article_meta ( $row->systemname );
 			
-			$page = get_page ( $row->systemname) ;
+			$page = get_page ( $row->systemname );
 			
 			if ($meta and isNotNullOrEmpty ( $meta->excerpt )) {
 				$description = $meta->excerpt;
