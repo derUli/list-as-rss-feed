@@ -39,7 +39,7 @@ if (get_type () == "list" and $id !== null) {
 			
 			$page = get_page ( $row->systemname );
 			
-			if ($meta and isNotNullOrEmpty ( $meta->excerpt )) {
+			if ($meta and StringHelper::isNotNullOrEmpty ( $meta->excerpt )) {
 				$description = $meta->excerpt;
 			} else {
 				$content = $page ["content"];
