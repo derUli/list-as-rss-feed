@@ -35,9 +35,9 @@ if (get_type () == "list" and $id !== null) {
 			}
 			
 			$url .= $servername;
-			$meta = get_article_meta ( $row->systemname );
+			$meta = get_article_meta ( $row->slug );
 			
-			$page = get_page ( $row->systemname );
+			$page = get_page ( $row->slug );
 			
 			if ($meta and StringHelper::isNotNullOrEmpty ( $meta->excerpt )) {
 				$description = $meta->excerpt;
@@ -56,7 +56,7 @@ if (get_type () == "list" and $id !== null) {
 			
 			echo "<item>\n";
 			echo "<title>" . htmlspecialchars ( $row->title ) . "</title>\n";
-			$link = rootDirectory () . buildSEOUrl ( $row->systemname );
+			$link = rootDirectory () . buildSEOUrl ( $row->slug );
 			
 			echo "<link>" . Template::getEscape ( $link ) . "</link>\n";
 			echo "<description>" . htmlspecialchars ( $description ) . "</description>\n";

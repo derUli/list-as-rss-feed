@@ -1,7 +1,7 @@
 {
    "id" : "list_as_rss_feeed",
-   "version" : "1.1",
+   "version" : "1.2",
    "description" : "List as RSS Feed",
    "categories" : ["rss", "feed"],
-   "compatible_from" : "2017.3"
+   "compatible_from" : "20192.8"
 }
