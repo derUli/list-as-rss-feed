@@ -3,5 +3,5 @@
    "version" : "1.2",
    "description" : "List as RSS Feed",
    "categories" : ["rss", "feed"],
-   "compatible_from" : "20192.8"
+   "compatible_from" : "2019.2.8"
 }
