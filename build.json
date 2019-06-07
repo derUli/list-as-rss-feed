@@ -1,5 +1,5 @@
 {
-   "id" : "list_as_rss_feeed",
+   "id" : "list_as_rss_feed",
    "version" : "1.2",
    "description" : "List as RSS Feed",
    "categories" : ["rss", "feed"],
