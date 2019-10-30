@@ -15,7 +15,7 @@ if (get_type () == "list" and $id !== null) {
 		echo "<channel>";
 		echo "<title>" . Template::getEscape ( getconfig ( "homepage_title" ) ) . "</title>\n";
 		echo "<link>" . rootDirectory () . "</link>\n";
-		echo "<description>" . Template::getEscape ( Settings::get ( "motto" ) ) . "</description>\n";
+		echo "<description>" . Template::getEscape ( Settings::get ( "site_slogan" ) ) . "</description>\n";
 		
 		if (! getconfig ( "hide_meta_generator" )) {
 			$generator = "UliCMS " . cms_version ();
